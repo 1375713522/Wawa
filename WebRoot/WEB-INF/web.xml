@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <display-name></display-name>
+  <filter>
+  	<filter-name>managerFilter</filter-name>
+  	<filter-class>zcip.peak.filter.ManagerFilter</filter-class>
+  </filter>
+  <filter-mapping>
+  	<filter-name>managerFilter</filter-name>
+  	<url-pattern>/*</url-pattern>
+  </filter-mapping>
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>zcip.peak.servlet.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>RegisterServlet</servlet-name>
+    <servlet-class>zcip.peak.servlet.RegisterServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UserServlet</servlet-name>
+    <servlet-class>zcip.peak.servlet.UserServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UserUpdateServlet</servlet-name>
+    <servlet-class>zcip.peak.servlet.UserUpdateServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UserUpdateAction</servlet-name>
+    <servlet-class>zcip.peak.servlet.UserUpdateAction</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UserAddAction</servlet-name>
+    <servlet-class>zcip.peak.servlet.UserAddAction</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UserSelectServlet</servlet-name>
+    <servlet-class>zcip.peak.servlet.UserSelectServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UserDeleteServlet</servlet-name>
+    <servlet-class>zcip.peak.servlet.UserDeleteServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UserDeleteAction</servlet-name>
+    <servlet-class>zcip.peak.servlet.UserDeleteAction</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>PrizeServlet</servlet-name>
+    <servlet-class>zcip.peak.servlet.PrizeServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>PrizeAddAction</servlet-name>
+    <servlet-class>zcip.peak.servlet.PrizeAddAction</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>PrizeSelectServlet</servlet-name>
+    <servlet-class>zcip.peak.servlet.PrizeSelectServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>PrizeUpdateServlet</servlet-name>
+    <servlet-class>zcip.peak.servlet.PrizeUpdateServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>PrizeUpdateAction</servlet-name>
+    <servlet-class>zcip.peak.servlet.PrizeUpdateAction</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>PrizeDeleteServlet</servlet-name>
+    <servlet-class>zcip.peak.servlet.PrizeDeleteServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>PrizeDeleteAction</servlet-name>
+    <servlet-class>zcip.peak.servlet.PrizeDeleteAction</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CupServlet</servlet-name>
+    <servlet-class>zcip.peak.servlet.CupServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>LotteryDraw</servlet-name>
+    <servlet-class>zcip.peak.servlet.LotteryDraw</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>HandleServlet</servlet-name>
+    <servlet-class>zcip.peak.servlet.HandleServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CupDeleteServlet</servlet-name>
+    <servlet-class>zcip.peak.servlet.CupDeleteServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CupDeleteAction</servlet-name>
+    <servlet-class>zcip.peak.servlet.CupDeleteAction</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CupSelectServlet</servlet-name>
+    <servlet-class>zcip.peak.servlet.CupSelectServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>FindPassword</servlet-name>
+    <servlet-class>zcip.peak.servlet.FindPassword</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>FindPassWordAction</servlet-name>
+    <servlet-class>zcip.peak.servlet.FindPassWordAction</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UserPrizeInfo</servlet-name>
+    <servlet-class>zcip.peak.servlet.UserPrizeInfo</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SeachServlet</servlet-name>
+    <servlet-class>zcip.peak.servlet.SeachServlet</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RegisterServlet</servlet-name>
+    <url-pattern>/register</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserServlet</servlet-name>
+    <url-pattern>/user</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserUpdateServlet</servlet-name>
+    <url-pattern>/userupdate</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserUpdateAction</servlet-name>
+    <url-pattern>/userupdateAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserAddAction</servlet-name>
+    <url-pattern>/useraddAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserSelectServlet</servlet-name>
+    <url-pattern>/userselect</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserDeleteServlet</servlet-name>
+    <url-pattern>/userdelete</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserDeleteAction</servlet-name>
+    <url-pattern>/userdeleteAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PrizeServlet</servlet-name>
+    <url-pattern>/prize</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PrizeAddAction</servlet-name>
+    <url-pattern>/prizeaddAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PrizeSelectServlet</servlet-name>
+    <url-pattern>/prizeselect</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PrizeUpdateServlet</servlet-name>
+    <url-pattern>/prizeupdate</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PrizeUpdateAction</servlet-name>
+    <url-pattern>/prizeupdateAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PrizeDeleteServlet</servlet-name>
+    <url-pattern>/prizedelete</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PrizeDeleteAction</servlet-name>
+    <url-pattern>/prizedeleteAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CupServlet</servlet-name>
+    <url-pattern>/cup</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LotteryDraw</servlet-name>
+    <url-pattern>/lotteryDraw</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>HandleServlet</servlet-name>
+    <url-pattern>/handleServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CupDeleteServlet</servlet-name>
+    <url-pattern>/cupdelete</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CupDeleteAction</servlet-name>
+    <url-pattern>/cupdeleteAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CupSelectServlet</servlet-name>
+    <url-pattern>/cupselect</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FindPassword</servlet-name>
+    <url-pattern>/findpassword</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FindPassWordAction</servlet-name>
+    <url-pattern>/findpasswordaction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserPrizeInfo</servlet-name>
+    <url-pattern>/userprizeinfo</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SeachServlet</servlet-name>
+    <url-pattern>/seach</url-pattern>
+  </servlet-mapping>	
+  
+  
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
